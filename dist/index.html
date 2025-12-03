@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conexão Terra Bambu - Proposta</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              terra: {
+                50: '#fcfbf7',
+                100: '#f6f3eb',
+                200: '#e8e0d1',
+                300: '#d5c4a8',
+                400: '#c8a165', // Bamboo Gold
+                500: '#b08d55',
+                600: '#947245',
+                700: '#76593a',
+                800: '#2C3E2D', // Deep Forest Green (Primary)
+                900: '#243225',
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+            },
+            backgroundImage: {
+              'noise': "url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22 opacity=%220.05%22/%3E%3C/svg%3E')",
+            }
+          }
+        }
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="/apnctb/assets/index-QhCRQPth.js"></script>
+</head>
+  <body class="bg-terra-50 text-terra-900 antialiased overflow-x-hidden relative">
+    <!-- Texture Overlay -->
+    <div class="fixed inset-0 bg-noise pointer-events-none z-50 opacity-40 mix-blend-multiply"></div>
+    <div id="root"></div>
+</body>
+</html>
